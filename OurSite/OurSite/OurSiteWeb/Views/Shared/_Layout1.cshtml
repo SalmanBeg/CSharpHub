@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>::OurSite:: - @ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Priya International - BR">
+    <meta name="author" content="Priya International - BR">
+    <link href="~/HR.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="~/Content/Assets/css/font-awesome.css">
+    <link rel="stylesheet" href="~/Content/Assets/lib/weather-icons/css/weather-icons.css">
+    <link rel="stylesheet" href="~/Content/Assets/lib/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="~/Content/Assets/lib/jquery-toggles/toggles-full.css">
+    <link rel="stylesheet" href="~/Content/Assets/css/quirk.css">
+    <link rel="stylesheet" href="~/Content/Assets/css/Custom.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="~/Content/jquery-ui-timepicker-addon.css" />
+    <script src="~/Content/Assets/lib/modernizr/modernizr.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/Content/Assets/lib/jquery/jquery.js"></script>
+    <script src="~/Content/Assets/lib/jquery-ui/jquery-ui.js"></script>
+    <script src="~/Content/Assets/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/Content/Assets/lib/jquery-toggles/toggles.js"></script>
+    <script src="~/Content/Assets/js/nano-scroller.js"></script>
+    <script src="~/Content/Assets/js/quirk.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-ui-timepicker-addon.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headerpanel">
+            <div class="logopanel">
+                <h2 style="font-size: 19px; margin-top: 4px;"><a href="@Url.Action("index", "Dashboard")">C# Hub</a></h2>
+            </div>
+            <div class="headerbar">
+                <div class="searchpanel" style="margin-left: -55px;">
+                    <div class="input-group">
+                        <input type="text" id="txtEmployee" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="header-right" id="afterloginheaderright" style="display: none;">
+                    <ul class="headermenu">
+                        <li>
+                            <div id="noticePanel" class="btn-group">
+                                <button class="btn btn-notice alert-notice" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                </button>
+                                <div id="noticeDropdown" class="dropdown-menu dm-notice pull-right">
+                                    <div role="tabpanel">
+                                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                                            <li class="active"><a data-target="#notification" data-toggle="tab">Notifications (2)</a></li>
+                                            <li><a data-target="#reminders" data-toggle="tab">Reminders (4)</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="notification">
+                                                <ul class="list-group notice-list">
+                                                    <li class="list-group-item unread">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <i class="fa fa-envelope"></i>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">New message from Weno Carasbong</a></h5>
+                                                                <small>June 20, 2015</small>
+                                                                <span>Soluta nobis est eligendi optio cumque...</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item unread">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <i class="fa fa-user"></i>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">Renov Leonga is now following you!</a></h5>
+                                                                <small>June 18, 2015</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <i class="fa fa-user"></i>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">Zaham Sindil is now following you!</a></h5>
+                                                                <small>June 17, 2015</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <i class="fa fa-thumbs-up"></i>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">Rey Reslaba likes your post!</a></h5>
+                                                                <small>June 16, 2015</small>
+                                                                <span>HTML5 For Beginners Chapter 1</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <i class="fa fa-comment"></i>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">Socrates commented on your post!</a></h5>
+                                                                <small>June 16, 2015</small>
+                                                                <span>Temporibus autem et aut officiis debitis...</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a class="btn-more" href="javascript:void(0)">View More Notifications <i class="fa fa-long-arrow-right"></i></a>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="reminders">
+                                                <h1 id="todayDay" class="today-day">...</h1>
+                                                <h3 id="todayDate" class="today-date">...</h3>
+                                                <h5 class="today-weather"><i class="wi wi-hail"></i>Cloudy 77 Degree</h5>
+                                                <p>Thunderstorm in the area this afternoon through this evening</p>
+                                                <h4 class="panel-title">Upcoming Events</h4>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <h4>20</h4>
+                                                                <p>Aug</p>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">HTML5/CSS3 Live! United States</a></h5>
+                                                                <small>San Francisco, CA</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <h4>05</h4>
+                                                                <p>Sep</p>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">Web Technology Summit</a></h5>
+                                                                <small>Sydney, Australia</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <h4>25</h4>
+                                                                <p>Sep</p>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">HTML5 Developer Conference 2015</a></h5>
+                                                                <small>Los Angeles CA United States</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-xs-2">
+                                                                <h4>10</h4>
+                                                                <p>Oct</p>
+                                                            </div>
+                                                            <div class="col-xs-10">
+                                                                <h5><a href="javascript:void(0)">AngularJS Conference 2015</a></h5>
+                                                                <small>Silicon Valley CA, United States</small>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <a class="btn-more" href="javascript:void(0)">View More Events <i class="fa fa-long-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-logged" data-toggle="dropdown" style="width: 100%">
+                                    @if (Model != null)
+                                    {
+                                        @Model.FirstName @Model.LastName
+                                    }
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="profile.html"><i class="glyphicon glyphicon-user"></i>My Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-cog"></i>Account Settings</a></li>
+                                    <li><a href="javascript:void(0)"><i class="glyphicon glyphicon-question-sign"></i>Help</a></li>
+                                    <li><a href="@Url.Action("login", "accounts")"><i class="glyphicon glyphicon-log-out"></i>Log Out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-right" id="beforloginheaderright" style="margin-top: 15px;">
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i>Login</button>
+                    <button class="btn btn-default" data-toggle="modal" data-target="#registerModal">&nbsp;Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="leftpanel">
+            <div class="leftpanelinner">
+                <div class="media leftpanel-profile">
+                    <div class="media-left">
+                        @{
+                            if (Model != null)
+                            {
+                                if (Model.Image != null)
+                                {
+                                    string groupLogo = Convert.ToBase64String(Model.Image);
+                                    string imageSrc = string.Format("data:image/jpeg;base64,{0}", groupLogo);
+                            <img src="@imageSrc" class="media-object img-circle" id="imgGroupLogo" />
+                                }
+                                else
+                                {
+                            <a href="javascript:void(0)">
+                                <img src="~/Content/Assets/images/photos/loggeduser.png" alt="" class="media-object img-circle">
+                            </a>
+                                }
+                            }
+                            else
+                            {
+                            <a href="javascript:void(0)">
+                                <img src="~/Content/Assets/images/photos/loggeduser.png" alt="" class="media-object img-circle">
+                            </a>
+                            }
+                        }
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            @if (Model != null)
+                            { @Model.FirstName @Model.LastName } <a data-toggle="collapse" data-target="javascript:void(0)loguserinfo" class="pull-right"><i class="fa fa-angle-down"></i></a>
+                        </h4>
+                        <span>
+                            @if (Model != null)
+                            { @Model.RoleName}
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="leftpanel-userinfo collapse" id="loguserinfo">
+                    <h5 class="sidebar-title">Address</h5>
+                    <address>
+                        @if (Model != null)
+                        { @Model.Address}
+                    </address>
+                    <h5 class="sidebar-title">Contact</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label class="pull-left">Email</label>
+                            <span class="pull-right">
+                                @if (Model != null)
+                                {@Model.Email}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <label class="pull-left">Home Phone</label>
+                            <span class="pull-right">
+                                @if (Model != null)
+                                {@Model.HomePhone}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <label class="pull-left">Cell Phone</label>
+                            <span class="pull-right">
+                                @if (Model != null)
+                                {@Model.CellPhone}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <label class="pull-left">Social</label>
+                            <div class="social-icons pull-right">
+                                <a href="javascript:void(0)"><i class="fa fa-facebook-official"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+                                <a href="javascript:void(0)"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="mainmenu">
+                        <ul class="nav nav-pills nav-stacked nav-quirk">
+                            <li class="active"><a href="@Url.Action("index", "dashboard")"><i class="fa fa-home"></i><span>Home</span></a></li>
+                            <li><a href="#"><i class="fa fa-user"></i><span>Post Question</span></a></li>
+                            <li class="nav-parent">
+                                <a href="@Url.Action("index", "dashboard")"><i class="fa fa-gears"></i><span>Interview Questions</span></a>
+                                <ul class="children">
+                                    <li><a href="@Url.Action("index", "employeeportalview")">C#</a></li>
+                                    <li><a href="@Url.Action("widgets", "employeeportalview")">ASP.NET</a></li>
+                                    <li><a href="@Url.Action("dashboard", "employeeportalview")">ASP.NET MVC</a></li>
+                                    <li><a href="@Url.Action("blogs", "employeeportalview")">SQL SERVER</a></li>
+                                    <li><a href="@Url.Action("blogs", "employeeportalview")">JavaScript</a></li>
+                                    <li><a href="@Url.Action("blogs", "employeeportalview")">JQuery</a></li>
+                                </ul>
+                            </li>
+                            @* <li><a href="@Url.Action("index", "dashboard")"><i class="fa fa-th-list"></i><span>Reports</span></a></li>
+                            <li><a href="@Url.Action("index", "dashboard")"><i class="fa fa-suitcase"></i><span>Wall</span></a></li>
+                            <li><a href="@Url.Action("index", "dashboard")"><i class="fa fa-home"></i><span>ACA</span></a></li>
+                            <li class="nav-parent">
+                                <a href="javascript:void(0)"><i class="fa fa-home"></i><span>Benefits</span></a>
+                                <ul class="children">
+                                    <li><a href="@Url.Action("index", "dashboard")">Option 1</a></li>
+                                    <li><a href="@Url.Action("index", "dashboard")">Option 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="@Url.Action("index", "dashboard")"><i class="fa fa-money"></i><span>Payroll</span></a></li>
+                            <li><a href="@Url.Action("index", "dashboard")"><i class="fa fa-clipboard"></i><span>Documents</span></a></li>*@
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @RenderSection("featured", required: false)
+        <div class="mainpanel">
+            <div class="contentpanel">
+                @RenderBody()
+            </div>
+        </div>
+    </section>
+
+    @*    Login Modal*@
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    @* Register Modal *@
+    <div class="modal fade" id="registerModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Register:</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

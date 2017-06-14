@@ -1,0 +1,15 @@
+C:\Users\demo\Desktop\OurSite\OurSiteHub\bin\Debug\OurSiteHub.dll.config
+C:\Users\demo\Desktop\OurSite\OurSiteHub\bin\Debug\OurSiteHub.dll
+C:\Users\demo\Desktop\OurSite\OurSiteHub\bin\Debug\OurSiteHub.pdb
+C:\Users\demo\Desktop\OurSite\OurSiteHub\obj\Debug\OurSiteHub.dll
+C:\Users\demo\Desktop\OurSite\OurSiteHub\obj\Debug\OurSiteHub.pdb
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\OurSiteHub.dll.config
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\OurSiteHub.dll
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\OurSiteHub.pdb
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\EntityFramework.dll
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\EntityFramework.SqlServer.dll
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\EntityFramework.xml
+E:\OurSite\OurSite\OurSiteHub\bin\Debug\EntityFramework.SqlServer.xml
+E:\OurSite\OurSite\OurSiteHub\obj\Debug\OurSiteHub.dll
+E:\OurSite\OurSite\OurSiteHub\obj\Debug\OurSiteHub.pdb
+E:\OurSite\OurSite\OurSiteHub\obj\Debug\OurSiteHub.csprojResolveAssemblyReference.cache
